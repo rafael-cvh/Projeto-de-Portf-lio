@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Portfólio - Contato</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Contato</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="projeto.html">Projetos</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+    <section class="contato">
+      <h2>Entre em contato</h2>
+        <form>
+            <label>Nome</label>
+            <input type="Texto" required>
+
+            <label>Email</label>
+            <input type="email" required>
+
+            <label>Mensagem</label>
+            <textarea required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
