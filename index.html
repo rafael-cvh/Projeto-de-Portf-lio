@@ -2,43 +2,60 @@
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <title>Portfólio - Inicio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfólio | Início</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/port.css" />
   </head>
   <body>
-    <header>
-      <h1>Meu Portfólio</h1>
-      <nav>
-        <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="projeto.html">Projetos</a></li>
-          <li><a href="contato.html">Contato</a></li>
-        </ul>
-      </nav>
+    <header class="main-header">
+      <div class="container header-content">
+        <h1 class="logo">G & R</h1>
+        <nav>
+          <ul class="nav-bar">
+            <li><a class="link active" href="index.html">Início</a></li>
+            <li><a class="link" href="projeto.html">Projetos</a></li>
+            <li><a class="link" href="contato.html">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
+
     <main>
-      <section id="apresentacao">
-        <h2>Olá,bem vindo ao meu portfólio</h2>
-        <p>
-          Aqui você pode conhecer um pouco do meu trabalho com html,CSS e
-          JavaScript
-        </p>
+      <section id="apresentacao" class="hero">
+        <div class="container">
+          <h2>Bem-vindos ao nosso Portfólio</h2>
+          <h4>Rafael Carvalho & Sérgio Guthyerres</h4>
+          <h3 class="typing-effect"></h3>
+          <p class="paragrafo">
+            Estudantes de Sistemas para Internet no IFMA Timon.
+            Transformando código em soluções visuais.
+          </p>
+          <a href="projeto.html" class="btn">Ver Projetos</a>
+        </div>
       </section>
 
-      <section id="sobre">
-        <h2>Sobre mim</h2>
-        <p>
-          Sou um estudante de Sistemas para internet no IFMA - Campus
-          Timon,interessado em obter novas experiências
-        </p>
+      <section id="sobre" class="section-padding">
+        <div class="container">
+          <h2 class="section-title">Sobre Nós</h2>
+          <p class="paragrafo">
+            Somos uma dupla apaixonada por desenvolvimento web, atualmente finalizando o 2º período.
+            Este portfólio demonstra nossa evolução com HTML, CSS e JavaScript puros.
+          </p>
+        </div>
       </section>
     </main>
 
     <footer>
-      <p>© 2026 - Rafael Carvalho de Sousa</p>
-      <a href="#">Email:rafa.melhor@gmail.com</a>
+      <div class="container footer-content">
+        <p>© 2026 - Desenvolvido por Rafael & Guthyerres</p>
+        <div class="emails">
+          <a href="mailto:rafa.melhor@gmail.com">rafa.melhor@gmail.com</a>
+          <span class="separator">|</span>
+          <a href="mailto:guthyerressergio@gmail.com">guthyerressergio@gmail.com</a>
+        </div>
+      </div>
     </footer>
-
     <script src="script.js"></script>
   </body>
 </html>

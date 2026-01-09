@@ -2,46 +2,59 @@
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <title>Portfólio - Projetos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfólio | Projetos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/port.css" />
   </head>
   <body>
-    <header>
-      <h1>Meus Projetos</h1>
-      <nav>
-        <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="projeto.html">Projetos</a></li>
-          <li><a href="contato.html">Contato</a></li>
-        </ul>
-      </nav>
+    <header class="main-header">
+      <div class="container header-content">
+        <h1 class="logo">G & R</h1>
+        <nav>
+          <ul class="nav-bar">
+            <li><a class="link" href="index.html">Início</a></li>
+            <li><a class="link active" href="projeto.html">Projetos</a></li>
+            <li><a class="link" href="contato.html">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
-    <main>
-    <section class="projeto">
-      <h3>Projeto 1: Site Estático</h3>
-      <p>
-        Criação de um site institucional simples com foco em semântica
-        Html e CSS para a estilização das páginas
-      </p>
-    </section>
-    
-    <section class="projeto">
-      <h3>Projeto 2:Catálogo Interativo</h3>
-      <p>
-        Página de catálogo simples com manipulação básica do DOM para exibir
-        detalhes de produtos
-      </p>
-    </section>
+    <main class="container section-padding">
+      <h2 class="section-title">Nossos Projetos</h2>
 
-    <section class="projeto">
-      <h3>Projeto 3:Blog simples</h3>
-      <p>
-        Estrutura de blog estático, otimizando para diferentes tamanhos de tela
-      </p>
-    </section>
+      <div class="projects-grid">
+        <article class="card-projeto">
+          <h3>Site Estático</h3>
+          <p>Um site institucional desenvolvido apenas com HTML e CSS, focado em semântica e acessibilidade.</p>
+          <a href="#" class="link-projeto">Ver mais</a>
+        </article>
+
+        <article class="card-projeto">
+          <h3>Catálogo Interativo</h3>
+          <p>Catálogo de produtos utilizando Arrays em JavaScript para renderizar os itens dinamicamente.</p>
+          <a href="#" class="link-projeto">Ver mais</a>
+        </article>
+
+        <article class="card-projeto">
+          <h3>Blog Simples</h3>
+          <p>Layout clássico de blog com barra lateral e sistema de grid para postagens recentes.</p>
+          <a href="#" class="link-projeto">Ver mais</a>
+        </article>
+      </div>
     </main>
 
+    <footer>
+      <div class="container footer-content">
+        <p>© 2026 - Desenvolvido por Rafael & Guthyerres</p>
+        <div class="emails">
+          <a href="mailto:rafa.melhor@gmail.com">rafa.melhor@gmail.com</a>
+          <span class="separator">|</span>
+          <a href="mailto:guthyerressergio@gmail.com">guthyerressergio@gmail.com</a>
+        </div>
+      </div>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>

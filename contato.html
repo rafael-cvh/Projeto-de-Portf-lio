@@ -2,39 +2,59 @@
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <title>Portfólio - Contato</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfólio | Contato</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/port.css" />
   </head>
   <body>
-    <header>
-      <h1>Contato</h1>
-      <nav>
-        <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="projeto.html">Projetos</a></li>
-          <li><a href="contato.html">Contato</a></li>
-        </ul>
-      </nav>
+    <header class="main-header">
+      <div class="container header-content">
+        <h1 class="logo">G & R</h1>
+        <nav>
+          <ul class="nav-bar">
+            <li><a class="link" href="index.html">Início</a></li>
+            <li><a class="link" href="projeto.html">Projetos</a></li>
+            <li><a class="link active" href="contato.html">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
-    <main>
-    <section class="contato">
-      <h2>Entre em contato</h2>
-        <form>
-            <label>Nome:</label>
-            <input type="Texto" required>
+    <main class="container section-padding">
+      <section class="contato-wrapper">
+        <h2 class="section-title">Entre em Contato</h2>
+        <form class="form-contato">
+            <div class="input-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" placeholder="Seu nome" required>
+            </div>
 
-            <label>Email:</label>
-            <input type="email" required>
+            <div class="input-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="seu@email.com" required>
+            </div>
 
-            <label>Mensagem:</label>
-            <textarea required></textarea>
+            <div class="input-group">
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" rows="5" placeholder="Como podemos ajudar?" required></textarea>
+            </div>
 
-            <button type="submit">Enviar</button>
+            <button type="submit" class="btn">Enviar Mensagem</button>
         </form>
-    </section>
+      </section>
     </main>
 
+    <footer>
+      <div class="container footer-content">
+        <p>© 2026 - Desenvolvido por Rafael & Guthyerres</p>
+        <div class="emails">
+          <a href="mailto:rafa.melhor@gmail.com">rafa.melhor@gmail.com</a>
+          <span class="separator">|</span>
+          <a href="mailto:guthyerressergio@gmail.com">guthyerressergio@gmail.com</a>
+        </div>
+      </div>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>
